@@ -1,0 +1,564 @@
+
+h1{
+          text-align: center;
+          margin-bottom: -25px;
+          font-family: 'Courier New', Courier, monospace;
+          color: black;
+          font-size: 3rem;
+}
+h3{
+          text-align: center;
+          margin-left: -10rem;
+          font-family: monospace;
+}
+.heading {
+          background-color: rgb(110, 176, 196);
+          border: 2px solid black;
+          background : linear-gradient(90deg,rgba(42, 123, 155, 1) 0%, rgba(87, 199, 133, 1) 50%, rgba(237, 221, 83, 1) 100%);
+          border-radius: 5px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          min-width: 50%;
+
+          
+}
+p {
+          margin-top: 50px;
+          margin-bottom: -1px;
+          font-size: 25px;
+          color: rgb(255,255,255);
+          font-variant: small-caps;
+          font-display:block;
+          font-style: italic;
+          text-align: center;
+
+}
+
+
+.form-group{
+       background-color:rgb(44, 167, 171);
+       margin-top: 10px;
+       display: flex;
+       flex-direction: column;
+       margin: 10px 9rem;
+       border: 2px solid black;
+       padding-left: 5px;
+       padding-right: 5px;
+       border-radius: 5px;
+       border-color: rgb(0, 0, 0);
+}
+fieldset {
+          flex-direction: column;
+          display: flex;
+          font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#bg-video {
+  position: fixed;         
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;             
+  object-fit: cover;         
+}
+.rating {
+      display:flex;
+      flex-direction: column;
+      row-gap: 5px;
+}
+.textarea {
+      width: 20rem;
+      height: 3rem;
+      font-size: 20px;
+      font-family: monospace;
+      border: 2px solid black;
+      border-radius: 5px;
+      background-color: rgb(131, 214, 214);
+}
+body {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-right: 100px;
+      margin-left: 100px;
+      min-width: 50rem;
+}
+.termsforahref{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.name-class {
+      height: 1rem;
+      width: 13rem;
+      background-color: rgb(131, 214, 214);
+      border: 2px solid black;
+      border-radius: 5px;
+      font-size: 18px;
+      font-family: monospace;
+
+}
+.email-class {
+      height: 1rem;
+      width: 13rem;
+      background-color: rgb(131, 214, 214);
+      border: 2px solid black;
+      border-radius: 5px;
+      font-size: 18px;
+      font-family: monospace;
+}
+.number-class {
+      height: 1rem;
+      width: 14rem;
+      background-color: rgb(131, 214, 214);
+      border: 2px solid black;
+      border-radius: 5px;
+      font-size: 18px;
+      font-family: monospace;
+
+}
+.personal-info {
+     gap: 10px;
+}
+.dropdown-class {
+      width: 13rem;
+      font-size: 20px;
+      font-family: monospace;
+      border: 2px solid black;
+      border-radius: 5px;
+      background-color: rgb(131, 214, 214);
+}
+.terms{
+      align-items: center;
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-top: 10px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      gap: 4px;
+}
+.submit-button {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+     justify-content: center;
+     padding-bottom: 10px;
+}
+.submit {
+      width: 10rem;
+      height: 2rem;
+      background-color: rgb(131, 214, 214);
+      border: 2px solid black;
+      border-radius: 5px;
+      font-family: monospace;
+      margin-top: 10px;
+      cursor:pointer;
+}
+.submit:hover {
+      background-color: rgb(87, 199, 133);
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+}
+.textarea:hover {
+      background-color: rgb(87, 199, 133);
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+}
+.textarea:focus {
+      background-color: rgb(87, 199, 133);
+      color: rgb(0, 0, 0);
+      font-weight: normal;
+      cursor:none;
+}
+.dropdown-class:hover {
+      background-color: rgb(87, 199, 133);
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+}
+.dropdown-class:focus {
+      background-color: rgb(131, 214, 214);
+      color: rgb(0, 0, 0);
+      font-weight: normal;
+      cursor:pointer;
+}
+.name-class:hover {
+      background-color: rgb(87, 199, 133);
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+}
+.name-class:focus {
+      background-color: rgb(87, 199, 133);
+      color: rgb(0, 0, 0);
+      font-weight: normal;
+      cursor:none;
+}
+.email-class:hover {
+      background-color: rgb(87, 199, 133);
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+}
+.email-class:focus {
+      background-color: rgb(87, 199, 133);
+      color: rgb(0, 0, 0);
+      font-weight: normal;
+      cursor:none;
+}
+.number-class:hover {
+      background-color: rgb(87, 199, 133);
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+}
+.number-class:focus {
+      background-color: rgb(87, 199, 133);
+      color: rgb(0, 0, 0);
+      font-weight: normal;
+      cursor:none;
+}
+.yes:hover {
+      cursor: pointer;
+}
+.no:hover {
+      cursor: pointer;
+}
+fieldset {
+      background-color: rgb(44, 167, 171);
+      border: 2px;
+      border-style: solid;
+      border-color: black;
+      border-radius: 5px;
+      padding: 5px;
+      margin: 2px;
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+legend {
+      color:azure;
+      font-weight: bold;
+      font-size: 1rem;
+}
+footer {
+      padding-bottom: 100px;
+}
+a:link {
+      color:black;
+      background-color: lightyellow;
+}
+a:visited {
+      color:darkblue;
+}
+a:hover {
+      color: black;
+      font-weight: bold;
+      background-color: azure;
+}
+@media (max-width: 786px) {
+      body {
+            margin-right: 20px;
+            margin-left: 20px;
+            min-width: 100%;
+      }
+      .form-group {
+            margin: 10px 1rem;
+      }
+      h3 {
+            margin-left: 0;
+      }
+      .heading {
+            width: 100%;
+      }
+}
+@media (max-width: 480px) {
+      h1 {
+            font-size: 2rem;
+      }
+      .form-group {
+            margin: 10px 0.5rem;
+      }
+      .name-class, .email-class, .number-class, .dropdown-class {
+            width: 100%;
+      }
+      .submit-button {
+            width: 100%;
+      }
+      .submit {
+            width: 100%;
+      }
+}
+@media (max-width: 360px) {
+      h1 {
+            font-size: 1.5rem;
+      }
+      .form-group {
+            margin: 10px 0.2rem;
+      }
+      .name-class, .email-class, .number-class, .dropdown-class {
+            width: 100%;
+            font-size: 16px;
+      }
+      .submit-button {
+            width: 100%;
+      }
+      .submit {
+            width: 100%;
+            font-size: 16px;
+      }
+}
+@media (max-width: 320px) {
+      h1 {
+            font-size: 1.2rem;
+      }
+      .form-group {
+            margin: 10px 0.1rem;
+      }
+      .name-class, .email-class, .number-class, .dropdown-class {
+            width: 100%;
+            font-size: 14px;
+      }
+      .submit-button {
+            width: 100%;
+      }
+      .submit {
+            width: 100%;
+            font-size: 14px;
+      }
+}
+@media (max-width: 280px) {
+      h1 {
+            font-size: 1rem;
+      }
+      .form-group {
+            margin: 10px 0.05rem;
+      }
+      .name-class, .email-class, .number-class, .dropdown-class {
+            width: 100%;
+            font-size: 12px;
+      }
+      .submit-button {
+            width: 100%;
+      }
+      .submit {
+            width: 100%;
+            font-size: 12px;
+      }
+}
+@media (max-width: 240px) {
+      h1 {
+            font-size: 0.8rem;
+      }
+      .form-group {
+            margin: 10px 0.02rem;
+      }
+      .name-class, .email-class, .number-class, .dropdown-class {
+            width: 100%;
+            font-size: 10px;
+      }
+      .submit-button {
+            width: 100%;
+      }
+      .submit {
+            width: 100%;
+            font-size: 10px;
+      }
+}
+@media (max-width: 200px) {
+      h1 {
+            font-size: 0.6rem;
+      }
+      .form-group {
+            margin: 10px 0.01rem;
+      }
+      .name-class, .email-class, .number-class, .dropdown-class {
+            width: 100%;
+            font-size: 8px;
+      }
+      .submit-button {
+            width: 100%;
+      }
+      .submit {
+            width: 100%;
+            font-size: 8px;
+      }
+}
+@media (max-width: 160px) {
+      h1 {
+            font-size: 0.4rem;
+      }
+      .form-group {
+            margin: 10px 0.005rem;
+      }
+      .name-class, .email-class, .number-class, .dropdown-class {
+            width: 100%;
+            font-size: 6px;
+      }
+      .submit-button {
+            width: 100%;
+      }
+      .submit {
+            width: 100%;
+            font-size: 6px;
+      }
+}
+@media (max-width: 120px) {
+      h1 {
+            font-size: 0.2rem;
+      }
+      .form-group {
+            margin: 10px 0.002rem;
+      }
+      .name-class, .email-class, .number-class, .dropdown-class {
+            width: 100%;
+            font-size: 4px;
+      }
+      .submit-button {
+            width: 100%;
+      }
+      .submit {
+            width: 100%;
+            font-size: 4px;
+      }
+}
+@media (max-width: 80px) {
+      h1 {
+            font-size: 0.1rem;
+      }
+      .form-group {
+            margin: 10px 0.001rem;
+      }
+      .name-class, .email-class, .number-class, .dropdown-class {
+            width: 100%;
+            font-size: 2px;
+      }
+      .submit-button {
+            width: 100%;
+      }
+      .submit {
+            width: 100%;
+            font-size: 2px;
+      }
+}
+@media (max-width: 40px) {
+      h1 {
+            font-size: 0.05rem;
+      }
+      .form-group {
+            margin: 10px 0.0005rem;
+      }
+      .name-class, .email-class, .number-class, .dropdown-class {
+            width: 100%;
+            font-size: 1px;
+      }
+      .submit-button {
+            width: 100%;
+      }
+      .submit {
+            width: 100%;
+            font-size: 1px;
+      }
+}
+@media (max-width: 20px) {
+      h1 {
+            font-size: 0.02rem;
+      }
+      .form-group {
+            margin: 10px 0.0002rem;
+      }
+      .name-class, .email-class, .number-class, .dropdown-class {
+            width: 100%;
+            font-size: 0.5px;
+      }
+      .submit-button {
+            width: 100%;
+      }
+      .submit {
+            width: 100%;
+            font-size: 0.5px;
+      }
+}
+@media (max-width: 10px) {
+      h1 {
+            font-size: 0.01rem;
+      }
+      .form-group {
+            margin: 10px 0.0001rem;
+      }
+      .name-class, .email-class, .number-class, .dropdown-class {
+            width: 100%;
+            font-size: 0.25px;
+      }
+      .submit-button {
+            width: 100%;
+      }
+      .submit {
+            width: 100%;
+            font-size: 0.25px;
+      }
+}
+@media (max-width: 5px) {
+      h1 {
+            font-size: 0.005rem;
+      }
+      .form-group {
+            margin: 10px 0.00005rem;
+      }
+      .name-class, .email-class, .number-class, .dropdown-class {
+            width: 100%;
+            font-size: 0.125px;
+      }
+      .submit-button {
+            width: 100%;
+      }
+      .submit {
+            width: 100%;
+            font-size: 0.125px;
+      }
+}
+@media (max-width: 2px) {
+      h1 {
+            font-size: 0.0025rem;
+      }
+      .form-group {
+            margin: 10px 0.00002rem;
+      }
+      .name-class, .email-class, .number-class, .dropdown-class {
+            width: 100%;
+            font-size: 0.0625px;
+      }
+      .submit-button {
+            width: 100%;
+      }
+      .submit {
+            width: 100%;
+            font-size: 0.0625px;
+      }
+}
+@media (max-width: 1px) {
+      h1 {
+            font-size: 0.00125rem;
+      }
+      .form-group {
+            margin: 10px 0.00001rem;
+      }
+      .name-class, .email-class, .number-class, .dropdown-class {
+            width: 100%;
+            font-size: 0.03125px;
+      }
+      .submit-button {
+            width: 100%;
+      }
+      .submit {
+            width: 100%;
+            font-size: 0.03125px;
+      }
+}
+
+
+
+
+

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+   <title>Maa's Kitchen</title>
+  </head>
+  <body>
+     <video autoplay muted loop id="bg-video">
+       <source src="https://github.com/MainakAdak02/video-host/raw/refs/heads/main/cooking%20stock%20video%20NCP.mp4" video-type="video/mp4">
+       Your browser does not support the video tag.
+     </video>
+    <div class="heading">
+     <h1 id="title">Maa's Kitchen</h1>
+     <h3> Food made with mom's ❤︎</h3>
+    </div>
+    <p id="description">Your opinion matters to us! So kindly fill up this survey form</p>
+    <form class="form" id="survey-form" method="post" action="https://google.com">
+      <div class="form-group">
+     <fieldset class="personal-info">
+      <legend>Personal Information</legend>
+     <label id="name-label" for="name" >Name <input id="name" type="text" placeholder="Enter your name" class="name-class" required /></label>
+     <label id="email-label" for="email" > Email <input id="email" type="email" placeholder="Enter your email id here" class="email-class" required/></label>
+     <label id="number-label" for="number">Age <input placeholder="enter your age here" type="number" id="number" min="20" max="40" required class="number-class" /></label>
+     </fieldset>
+     <fieldset>
+      <legend>Where did you hear about us?</legend>
+     <label for="dropdown" >
+     <select id="dropdown" class="dropdown-class" name="dropdown" required>
+       <option value="" disabled selected hidden>select one</option>
+       <option value="1">from google search</option>
+       <option value="2" >from tv ads</option>
+       <option value="3" >by scrolling on social media</option>
+       <option value="4" >from friends</option>
+       <option value="5" >from relatives</option>
+     </select>
+     </label>
+     </fieldset>
+     <fieldset>
+     <legend>Are you a customer of Maa's Kitchen?</legend>
+     <label for="yes">Yes<input type="radio" name="customer-past" checked value="yes" id="yes" class="yes"/></label>
+     <label for="no">No<input type="radio" id="no" name="customer-past" value="no" class="no"/></label>
+     </fieldset>
+     
+       <fieldset>
+         <legend>Have you tried any of these?</legend>
+       <label for="bengali"> Bengali cuisine <input type="checkbox" id="bengali" value="bengali" class="yes" /><label>
+         <label for="north-indian"> North-Indian cuisine<input type="checkbox" id="north-indian" value="north-indian" class="yes" /></label>
+         <label for="south-indian"> South-Indian cuisine<input type="checkbox" id="south-indian" value="south-indian" class="yes" /></label>
+        <label for="chinese"> Chinese cuisine <input type="checkbox" id="chinese" value="chinese" class="yes"/></label>
+        </fieldset>
+        <fieldset class="rating">
+          <legend>How would you rate these?</legend>
+          <div class="Bengali cuisine">
+            <label for="bengali-cuisine">Bengali cuisine- </label>
+            <label for="one">1<input type="radio" id="bengali-one" name="bengali" class="yes"/></label>
+            <label for="two">2<input type="radio" id="bengali-two" name="bengali" class="yes"/></label>
+            <label for="three">3<input type="radio" id="bengali-three" name="bengali" class="yes"/></label>
+            <label for="four">4<input type="radio" id="bengali-four" name="bengali" class="yes"/></label>
+            <label for="five">5<input type="radio" id="bengali-five" name="bengali" class="yes"/></label>
+          </div>
+          <div class="North-Indian cuisine">
+            <label for="north-indian-cuisine">North-Indian cuisine- </label>
+            <label for="one">1<input type="radio" id="north-indian-one" name="north-indian" class="yes"/></label>
+            <label for="two">2<input type="radio" id="north-indian-two" name="north-indian" class="yes"/></label>
+            <label for="three">3<input type="radio" id="north-indian-three" name="north-indian" class="yes"/></label>
+            <label for="four">4<input type="radio" id="north-indian-four" name="north-indian" class="yes"/></label>
+            <label for="five">5<input type="radio" id="north-indian-five" name="north-indian" class="yes"/></label>
+          </div>
+          <div class="South-Indian cuisine">
+            <label for="south-indian-cuisine">South-Indian cuisine- </label>
+            <label for="one">1<input type="radio" id="south-indian-one" name="south-indian" class="yes"/></label>
+            <label for="two">2<input type="radio" id="south-indian-two" name="south-indian" class="yes"/></label>
+            <label for="three">3<input type="radio" id="south-indian-three" name="south-indian" class="yes"/></label>
+            <label for="four">4<input type="radio" id="south-indian-four" name="south-indian" class="yes"/></label>
+            <label for="five">5<input type="radio" id="south-indian-five" name="south-indian" class="yes"/></label>
+          </div>
+          <div class="Chinese cuisine">
+            <label for="chinese-cuisine">Chinese cuisine- </label>
+            <label for="one">1<input type="radio" id="chinese-one" name="chinese" class="yes"/></label>
+            <label for="two">2<input type="radio" id="chinese-two" name="chinese" class="yes"/></label>
+            <label for="three">3<input type="radio" id="chinese-three" name="chinese" class="yes"/></label>
+            <label for="four">4<input type="radio" id="chinese-four" name="chinese" class="yes"/></label>
+            <label for="five">5<input type="radio" id="chinese-five" name="chinese" class="yes"/></label>
+          </div>
+        </fieldset>
+        <fieldset>
+        <legend> Do you have anything about us in your mind?</legend>
+      <label for="any-other-feedback">
+        <input type="textarea" id="any-other-feedback" placeholder="Describe here..." class="textarea" /></label>
+        </fieldset>
+         <label for="terms-label" class="terms"><input type="checkbox" name="terms&conditions" id="terms-label" value="terms&conditions" required/> I have read all the <a href="https://google.com" class="termsforahref" target="_blank"> terms & conditions</a></label>
+         <label for="submit" class="submit-button">and I am done, I want to <input type="submit" id="submit" value="submit" name="submit" class="submit"/> </label>
+      </div>
+    </form>
+    </body>
+    <footer>
+      <p class="footer-text">© 2025 Maa's Kitchen. All rights reserved.</p>
+      <p class="footer-text">Made with ❤︎ by Mainak Adak</p>
+      <p class="footer-text">Contact: <a href="mailto:mainakadak1234@gmail.com?subject=Support%20Request&body=Hi%2C%0AI%20need%20help%20with%20" target="_blank" class="Contact">Email us</a></p>
+    </footer>
+</html>
